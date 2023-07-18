@@ -1,0 +1,236 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand*{\Lsquare}{
+	\tikz[baseline]{
+		\fill (-0.25ex,0.40ex) rectangle (0.25ex,0.90ex);
+		\draw (0,0.65ex) -- (-1.0ex,0.65ex);
+		\draw (-1.0ex,0.65ex) -- (-1.0ex,2.60ex);
+	}
+}
+
+\newcommand*{\Ldotdash}{
+	\tikz[baseline]{
+		\draw[white] (0,0.5ex) -- (-1ex,0.5ex);
+		\fill (0,0.5ex) circle (0.25ex);
+		\draw (0,0.5ex) -- (0,0.60);
+		\draw[densely dashed] (0,0.5ex) -- (3.0ex,0.5ex);
+	}
+}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Marco A Lopez} \\ \vspace{1pt}
+    \small 214-621-5290 $|$ \href{mailto:x@x.com}{\underline{marcoalopez0730@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/marco-lopez-67a264149/}{\underline{linkedin.com/in/marco-lopez-67a264149/}} $|$
+\href{https://github.com/Gale748}{\underline{github.com/Gale748}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarrant County College, Southeast Campus}{August 2020 -- May 2023}
+      {Associate of Science in Engineering}{Arlington, TX}
+    \resumeSubheading
+      {Texas Christian University}{August 2017 -- May 2019}
+      {B.S Mechanical Engineering}{Fort Worth, TX}
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, \LaTeX, Bash, zsh} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}\\
+     \textbf{CAD Software}{: PTC Creo, Fusion 360}\\
+     \textbf{3D Printing}{: SLA, SLS}\\
+     \textbf{Spoken Languages}{: English, Spanish }\\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Library Service Representative}{August 2021 -- Present}
+      {Grand Prairie Memorial Library}{Grand Prairie, TX}
+      \resumeItemListStart
+        \resumeItem{Assisted patrons with various computer-related inquiries, including troubleshooting, software usage, and device configuration.}
+        \resumeItem{Provided guidance and support for completing forms, documents, and printing services.}
+        \resumeItem{Collaborated with a team of librarians and staff to ensure efficient operations and a welcoming environment for library patrons.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Bakery Clerk}{March 2020 -- December 2020}
+      {Whole Foods Market}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Prepared and baked a variety of artisan bread, pastries, cakes, and other baked goods according to established recipes and standards.}
+        \resumeItem{Maintained a clean and organized work area, following food safety and sanitation guidelines.}
+        \resumeItem{Provided exceptional customer service, offering product recommendations and answering inquiries about ingredients, flavors, and allergens.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Customer Service Representative}{August 2017 -- August 2019}
+      {The Home Depot}{Grand Prairie, TX}
+      \resumeItemListStart
+        \resumeItem{Assisted customers in finding products, answering questions, and providing information on product features, specifications, and usage.}
+        \resumeItem{Processed customer orders accurately and efficiently, ensuring timely delivery or pickup.
+Resolved customer complaints and concerns in a professional and courteous manner, utilizing effective problem-solving skills to achieve customer satisfaction.}
+        \resumeItem{Utilized computer systems and software applications to access product information, check inventory availability, and place orders.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Simple Locking Mechanism} $|$ \emph{PTC Creo}}{January 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a locking mechanism using PTC Creo, a powerful computer-aided design (CAD) software, to enhance the security and functionality of a mechanical device. Leveraging the capabilities of PTC Creo, the project involved designing, modeling, and simulating a simple yet effective locking mechanism that could be implemented in various applications.}
+            % \resumeItem{Utilized PTC Creo's intuitive interface and robust design tools to create a 3D model of the locking mechanism.}
+            % \resumeItem{Documented the design process, including sketches, drawings, and annotations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Encrypto} $|$ \emph{Python}}{July 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a Discord bot capable of encrypting and decrypting messages on user command, enhancing communication privacy and security within the platform. Leveraged Python and the Discord API to create a versatile and user-friendly bot that offered end-to-end encryption for sensitive conversations.}
+            % \resumeItem{Implemented encryption algorithms, such as AES or RSA, to ensure secure message transmission and storage.}
+            % \resumeItem{Conducted rigorous testing and debugging to identify and resolve potential vulnerabilities or issues related to encryption and decryption procedures.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+ %-----------REFERENCES-----------
+\section{References}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Alejandro Oranday}
+{\href{mailto:alejandro@oran.day}{\underline{alejandro@oran.day}}}
+{Physics PhD Candidate at Indiana University}{}
+\resumeSubheading
+{Evan Shrestha}
+{\href{mailto:evanshrestha@gmail.com}{\underline{evanshrestha@gmail.com}}}
+{Machine Learning Engineer at Discord}{}
+\resumeSubheading
+{Mathew Puente}
+{\href{mailto:evanshrestha@gmail.com}{\underline{mathewjpuente@gmail.com}}}
+{Software Engineer at Lockheed Martin}{}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
